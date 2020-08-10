@@ -1,0 +1,272 @@
+/* CSS RESET */
+
+
+/* font 
+font-family: 'Baloo 2', cursive;
+font-family: 'Bree Serif', serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 60px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+    /* opacity: 0.9; */
+}
+
+
+/* Logo and Image  */
+
+#logo {
+    margin: 10px;
+    height: 60px;
+}
+
+#logo img {
+    width: 180px;
+    height: 68px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+
+/* List styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar ul li {
+    /* display: flex; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    background-color: #044a65;
+    font-weight: bolder;
+    padding: 0px 20px;
+    padding-bottom: 4px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    /* font-size: 1.2em; */
+}
+
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* margin-top: 10px; */
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/bg1.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 564px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Services-section */
+
+
+/* .services-container {
+    margin-top: 75px;
+} */
+
+#services {
+    margin: 32px;
+    display: flex;
+}
+
+#services .box {
+    border-radius: 23px;
+    border: 2px solid red;
+    padding: 10px 11px;
+    margin: 2px 60px;
+    background: #f3eded;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+    font-size: 0.9rem;
+}
+
+
+/* clients section  */
+
+#client-section {
+    height: 232px;
+    margin-top: 52px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 232px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 60px;
+}
+
+
+/* contact section  */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('../img/contact.jpg');
+}
+
+
+/* footer section start here  */
+
+footer {
+    background: black;
+    color: white;
+    padding: 12px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#contact-box form {
+    width: 36%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
